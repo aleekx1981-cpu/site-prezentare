@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexandru Tulbure – Automatizări AI pentru agenții imobiliare și pensiuni</title>
+  <meta name="description" content="Răspunsuri automate și personalizate la emailurile clienților, în sub un minut. Fiecare lead ajunge într-un Google Sheet.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Alexandru Tulbure</h1>
+    <p>Automatizări cu AI pentru agenții imobiliare și pensiuni: clienții dumneavoastră primesc răspuns personalizat în sub un minut.</p>
+  </header>
+
+  <nav>
+    <a href="#despre">Despre mine</a>
+    <a href="#demo-1">Demo 1</a>
+    <a href="#demo-2">Demo 2</a>
+    <a href="#primesti">Ce primiți</a>
+    <a href="#preturi">Prețuri</a>
+    <a href="#faq">Întrebări</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section id="despre">
+      <h2>Cine sunt</h2>
+      <p>Sunt Alexandru, din Cluj-Napoca. Fac automatizări cu AI (Claude și Make) care răspund la emailurile clienților dumneavoastră și strâng fiecare lead într-un Google Sheet. Am 20 de ani de business propriu și sunt scriitor publicat, așa că știu cum să scriu un răspuns care sună a om, nu a robot.</p>
+    </section>
+
+    <section id="demo-1">
+      <h2>Demo 1 – Someș Home (agenție imobiliară)</h2>
+      <p>Agenție fictivă, creată ca exemplu. Iată cum răspunde automat unui client interesat de un apartament. Clientul scrie agenției, primește în sub un minut un răspuns personalizat, iar datele lui apar automat în Google Sheet.</p>
+      <video controls preload="metadata" width="100%">
+        <source src="demo-somes-home.mp4" type="video/mp4">
+        Browserul dumneavoastră nu poate reda videoul.
+      </video>
+    </section>
+
+    <section id="demo-2">
+      <h2>Demo 2 – Pensiunea Valea Someșului (Gilău)</h2>
+      <p>Pensiune fictivă, creată ca exemplu. Oaspeții scriu în orice limbă, iar răspunsul vine în limba lor. Răspunsul nu confirmă niciodată disponibilitatea: aceasta rămâne decizia proprietarului.</p>
+
+      <h3>Emailul primit</h3>
+      <blockquote>
+        <p><strong>Subiect:</strong> Cameră de familie 14–16 martie</p>
+        <p>Bună ziua,<br>
+        Căutăm o cameră de familie pentru 14–16 martie (2 adulți și un copil), cu un câine mic. Cât costă?<br>
+        Mulțumesc, Andrei</p>
+      </blockquote>
+
+      <h3>Răspunsul automat</h3>
+      <p>Oaspetele primește răspunsul doar în limba în care a scris. Mai jos e același răspuns în toate cele 4 limbi, ca să vedeți cum arată.</p>
+
+      <div class="raspunsuri">
+
+      <article lang="ro">
+        <h4>Română</h4>
+        <p>Bună ziua, Andrei,</p>
+        <p>Vă mulțumim pentru mesaj! Iată tarifele noastre:</p>
+        <ul>
+          <li>Apartament de familie: 520 lei/noapte duminică–joi, 600 lei/noapte vineri–sâmbătă</li>
+          <li>Câine mic: 50 lei/noapte</li>
+        </ul>
+        <p>Proprietarul va verifica disponibilitatea pentru 14–16 martie și vă confirmă în scurt timp. Până atunci, vă rugăm să nu considerați camera rezervată.</p>
+        <p>Cu drag,<br>Pensiunea Valea Someșului</p>
+      </article>
+
+      <article lang="en">
+        <h4>English</h4>
+        <p>Hello Andrei,</p>
+        <p>Thank you for your message! Here are our rates:</p>
+        <ul>
+          <li>Family apartment: 520 lei/night Sunday–Thursday, 600 lei/night Friday–Saturday</li>
+          <li>Small dog: 50 lei/night</li>
+        </ul>
+        <p>The owner will check availability for 14–16 March and confirm shortly. Until then, please do not consider the room reserved.</p>
+        <p>Kind regards,<br>Pensiunea Valea Someșului</p>
+      </article>
+
+      <article lang="de">
+        <h4>Deutsch</h4>
+        <p>Guten Tag Andrei,</p>
+        <p>Vielen Dank für Ihre Nachricht! Hier unsere Preise:</p>
+        <ul>
+          <li>Familienapartment: 520 Lei/Nacht Sonntag–Donnerstag, 600 Lei/Nacht Freitag–Samstag</li>
+          <li>Kleiner Hund: 50 Lei/Nacht</li>
+        </ul>
+        <p>Der Inhaber prüft die Verfügbarkeit für den 14.–16. März und bestätigt Ihnen diese in Kürze. Bis dahin betrachten Sie das Zimmer bitte noch nicht als reserviert.</p>
+        <p>Freundliche Grüße,<br>Pensiunea Valea Someșului</p>
+      </article>
+
+      <article lang="hu">
+        <h4>Magyar</h4>
+        <p>Kedves Andrei!</p>
+        <p>Köszönjük az üzenetét! Íme az áraink:</p>
+        <ul>
+          <li>Családi apartman: 520 lej/éjszaka vasárnaptól csütörtökig, 600 lej/éjszaka pénteken és szombaton</li>
+          <li>Kis kutya: 50 lej/éjszaka</li>
+        </ul>
+        <p>A tulajdonos ellenőrzi a szabad időpontot március 14–16-ra, és rövidesen visszaigazolja. Addig kérjük, ne tekintse lefoglaltnak a szobát.</p>
+        <p>Üdvözlettel,<br>Pensiunea Valea Someșului</p>
+      </article>
+      </div>
+
+      <h3>Ce vede proprietarul în Google Sheet</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nume</th>
+            <th>Date</th>
+            <th>Cerere</th>
+            <th>Limba</th>
+            <th>Necesită proprietar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Nume">Andrei</td>
+            <td data-label="Date">14–16 martie</td>
+            <td data-label="Cerere">Cameră de familie, 2 adulți + 1 copil, câine mic</td>
+            <td data-label="Limba">Română</td>
+            <td data-label="Necesită proprietar"><strong>da</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="primesti">
+      <h2>Ce primiți</h2>
+      <ul>
+        <li>Răspuns personalizat la fiecare email, în sub un minut, zi și noapte</li>
+        <li>Fiecare lead trecut automat într-un Google Sheet, cu datele clientului și mesajul lui</li>
+        <li>Răspunsuri în limba clientului: română, engleză, germană, maghiară</li>
+        <li>Configurare, întreținere și ajustări incluse în abonament</li>
+        <li>Informațiile dumneavoastră (prețuri, reguli, program) puse în răspunsuri, ca să sune a dumneavoastră</li>
+        <li>Cazurile speciale (disponibilitate, cereri neobișnuite) sunt marcate în tabel, ca să decideți dumneavoastră</li>
+      </ul>
+    </section>
+
+    <section id="preturi">
+      <h2>Prețuri</h2>
+      <ul>
+        <li><strong>Pilot gratuit, 2 săptămâni</strong> – vedeți cum merge la dumneavoastră, fără risc.</li>
+        <li><strong>Abonament de la 400 lei/lună + TVA</strong> – configurare, întreținere, ajustări.</li>
+        <li><strong>Variante personalizate</strong> – <a class="buton" href="#contact">Cereți o ofertă</a>.</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>Întrebări frecvente</h2>
+      <details>
+        <summary>Cât durează implementarea?</summary>
+        <p>Pilotul pornește în 1–2 zile.</p>
+      </details>
+      <details>
+        <summary>Trebuie să schimb ceva la emailul sau programul meu?</summary>
+        <p>Nu schimbați nimic din ce folosiți. Îmi dați doar acces la adresa de email, iar restul îl configurez eu.</p>
+      </details>
+      <details>
+        <summary>Răspunsurile pleacă singure? Cine decide la cererile speciale?</summary>
+        <p>Răspunsurile pleacă automat, în sub un minut. Cazurile speciale (disponibilitate, cereri neobișnuite) sunt marcate în tabel cu „necesită proprietar: da”, iar dumneavoastră decideți. Răspunsul automat nu confirmă niciodată o rezervare.</p>
+      </details>
+      <details>
+        <summary>Ce se întâmplă după pilotul gratuit?</summary>
+        <p>Dacă rezultatele vă mulțumesc, continuăm cu abonamentul de la 400 lei/lună + TVA. Dacă nu, ne oprim, fără obligații și fără costuri.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Scrieți-mi, vă răspund personal.</p>
+      <ul>
+        <li>Email: <a class="buton" href="mailto:alexandru.v.tulbure@icloud.com">alexandru.v.tulbure@icloud.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/alexandru-tulbure-516689139" target="_blank" rel="noopener">Alexandru Tulbure</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Alexandru Tulbure · Cluj-Napoca</p>
+  </footer>
+
+</body>
+</html>
