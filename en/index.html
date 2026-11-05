@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexandru Tulbure – AI automations for real estate agencies and guesthouses</title>
+  <meta name="description" content="Personal, automatic replies to your customers' emails in under a minute. Every lead lands in a Google Sheet.">
+  <link rel="alternate" hreflang="ro" href="../index.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <p class="limba" aria-label="Language">
+      <a href="../index.html" hreflang="ro" lang="ro">RO</a> | <strong aria-current="true">EN</strong>
+    </p>
+    <h1>Alexandru Tulbure</h1>
+    <p>AI automations for real estate agencies and guesthouses: your customers get a personal reply in under a minute.</p>
+  </header>
+
+  <nav>
+    <a href="#despre">About me</a>
+    <a href="#demo-1">Demo 1</a>
+    <a href="#demo-2">Demo 2</a>
+    <a href="#primesti">What you get</a>
+    <a href="#preturi">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section id="despre">
+      <h2>Who I am</h2>
+      <p>Hi, I'm Alexandru, based in Cluj-Napoca, Romania. I build AI automations (with Claude and Make) that answer your customers' emails for you and collect every lead in a Google Sheet. I've run my own businesses for 20 years and I'm a published author, so I know how to write a reply that sounds like a person, not a robot.</p>
+    </section>
+
+    <section id="demo-1">
+      <h2>Demo 1 – Someș Home (real estate agency)</h2>
+      <p>A fictional agency, made as an example. Here is how it automatically replies to a customer interested in an apartment. The customer writes to the agency, gets a personal reply in under a minute, and their details appear automatically in a Google Sheet.</p>
+      <video controls preload="metadata" width="100%">
+        <source src="../demo-somes-home.mp4" type="video/mp4">
+        Your browser cannot play this video.
+      </video>
+      <p class="nota">This demo is in Romanian. The system works the same way in English, German or Hungarian.</p>
+    </section>
+
+    <section id="demo-2">
+      <h2>Demo 2 – Pensiunea Valea Someșului (guesthouse in Gilău)</h2>
+      <p class="nota">(fictional guesthouse in Romania, prices in Romanian lei)</p>
+      <p>Guests write in any language and get the reply in theirs. The reply never confirms availability: that stays the owner's decision.</p>
+
+      <h3>The email received</h3>
+      <blockquote lang="ro">
+        <p><strong>Subiect:</strong> Cameră de familie 14–16 martie</p>
+        <p>Bună ziua,<br>
+        Căutăm o cameră de familie pentru 14–16 martie (2 adulți și un copil), cu un câine mic. Cât costă?<br>
+        Mulțumesc, Andrei</p>
+      </blockquote>
+
+      <h3>The automatic reply</h3>
+      <p>The guest receives the reply only in the language they wrote in. Below is the same reply in all 4 languages, so you can see how it looks.</p>
+
+      <div class="raspunsuri">
+      <article lang="ro">
+        <h4>Română</h4>
+        <p>Bună ziua, Andrei,</p>
+        <p>Vă mulțumim pentru mesaj! Iată tarifele noastre:</p>
+        <ul>
+          <li>Apartament de familie: 520 lei/noapte duminică–joi, 600 lei/noapte vineri–sâmbătă</li>
+          <li>Câine mic: 50 lei/noapte</li>
+        </ul>
+        <p>Proprietarul va verifica disponibilitatea pentru 14–16 martie și vă confirmă în scurt timp. Până atunci, vă rugăm să nu considerați camera rezervată.</p>
+        <p>Cu drag,<br>Pensiunea Valea Someșului</p>
+      </article>
+
+      <article lang="en">
+        <h4>English</h4>
+        <p>Hello Andrei,</p>
+        <p>Thank you for your message! Here are our rates:</p>
+        <ul>
+          <li>Family apartment: 520 lei/night Sunday–Thursday, 600 lei/night Friday–Saturday</li>
+          <li>Small dog: 50 lei/night</li>
+        </ul>
+        <p>The owner will check availability for 14–16 March and confirm shortly. Until then, please do not consider the room reserved.</p>
+        <p>Kind regards,<br>Pensiunea Valea Someșului</p>
+      </article>
+
+      <article lang="de">
+        <h4>Deutsch</h4>
+        <p>Guten Tag Andrei,</p>
+        <p>Vielen Dank für Ihre Nachricht! Hier unsere Preise:</p>
+        <ul>
+          <li>Familienapartment: 520 Lei/Nacht Sonntag–Donnerstag, 600 Lei/Nacht Freitag–Samstag</li>
+          <li>Kleiner Hund: 50 Lei/Nacht</li>
+        </ul>
+        <p>Der Inhaber prüft die Verfügbarkeit für den 14.–16. März und bestätigt Ihnen diese in Kürze. Bis dahin betrachten Sie das Zimmer bitte noch nicht als reserviert.</p>
+        <p>Freundliche Grüße,<br>Pensiunea Valea Someșului</p>
+      </article>
+
+      <article lang="hu">
+        <h4>Magyar</h4>
+        <p>Kedves Andrei!</p>
+        <p>Köszönjük az üzenetét! Íme az áraink:</p>
+        <ul>
+          <li>Családi apartman: 520 lej/éjszaka vasárnaptól csütörtökig, 600 lej/éjszaka pénteken és szombaton</li>
+          <li>Kis kutya: 50 lej/éjszaka</li>
+        </ul>
+        <p>A tulajdonos ellenőrzi a szabad időpontot március 14–16-ra, és rövidesen visszaigazolja. Addig kérjük, ne tekintse lefoglaltnak a szobát.</p>
+        <p>Üdvözlettel,<br>Pensiunea Valea Someșului</p>
+      </article>
+      </div>
+
+      <h3>What the owner sees in Google Sheets</h3>
+      <p class="nota">Columns: name, dates, request, language, needs owner.</p>
+      <table lang="ro">
+        <thead>
+          <tr>
+            <th>Nume</th>
+            <th>Date</th>
+            <th>Cerere</th>
+            <th>Limba</th>
+            <th>Necesită proprietar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Nume">Andrei</td>
+            <td data-label="Date">14–16 martie</td>
+            <td data-label="Cerere">Cameră de familie, 2 adulți + 1 copil, câine mic</td>
+            <td data-label="Limba">Română</td>
+            <td data-label="Necesită proprietar"><strong>da</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="primesti">
+      <h2>What you get</h2>
+      <ul>
+        <li>A personal reply to every email, in under a minute, day and night</li>
+        <li>Every lead added automatically to a Google Sheet, with the customer's details and message</li>
+        <li>Replies in your customer's language: Romanian, English, German or Hungarian</li>
+        <li>Setup, maintenance and adjustments included in the subscription</li>
+        <li>Your own details (prices, house rules, opening times) built into every reply, so it sounds like you</li>
+        <li>Special cases (availability, unusual requests) are flagged in the sheet, so you make the call</li>
+      </ul>
+    </section>
+
+    <section id="preturi">
+      <h2>Pricing</h2>
+      <ul>
+        <li><strong>Free 2-week pilot</strong> – see how it works for you, risk-free.</li>
+        <li><strong>Then from €80/month (excl. VAT)</strong> – setup, maintenance, adjustments.</li>
+        <li><strong>Custom options</strong> – <a class="buton" href="#contact">Ask for a quote</a></li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>How long does setup take?</summary>
+        <p>Your free pilot starts within 1–2 days.</p>
+      </details>
+      <details>
+        <summary>Do I need to change anything in my email or my routine?</summary>
+        <p>No. You keep using everything you use today. You just give me access to your email address, and I set up the rest.</p>
+      </details>
+      <details>
+        <summary>Do the replies go out on their own? Who handles special requests?</summary>
+        <p>Yes, replies go out automatically, in under a minute. Special cases, such as availability or unusual requests, are flagged in the sheet with "needs owner: yes", so you decide. The automatic reply never confirms a booking.</p>
+      </details>
+      <details>
+        <summary>What happens after the free pilot?</summary>
+        <p>If you're happy with the results, we continue with a subscription from €80/month (excl. VAT). If not, we simply stop — no obligation, no cost.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Write to me, I reply personally.</p>
+      <ul>
+        <li>Email: <a class="buton" href="mailto:alexandru.v.tulbure@icloud.com">alexandru.v.tulbure@icloud.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/alexandru-tulbure-516689139" target="_blank" rel="noopener">Alexandru Tulbure</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Alexandru Tulbure · Cluj-Napoca, Romania</p>
+  </footer>
+
+</body>
+</html>

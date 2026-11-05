@@ -70,6 +70,23 @@ footer {
   font-size: 0.95rem;
 }
 
+/* ===== Comutator de limbă RO | EN ===== */
+header p.limba {
+  margin: 0 0 1.5rem;
+  max-width: none;
+  text-align: right;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+.limba a { font-weight: 600; }
+.limba strong { color: var(--albastru); }
+
+/* ===== Notă mică (sub video, sub titluri) ===== */
+.nota {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
 /* ===== Meniul fix ===== */
 nav {
   position: sticky;
