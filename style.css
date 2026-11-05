@@ -192,6 +192,51 @@ th {
 }
 td strong { color: var(--accent); }
 
+/* ===== Pachete de prețuri: 1 pe telefon, 3 unul lângă altul pe calculator ===== */
+.pachete {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 860px) {
+  .pachete { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+}
+
+.pachet {
+  position: relative;
+  background: var(--fundal-soft);
+  border: 1px solid var(--linie);
+  border-top: 4px solid var(--albastru);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.pachet h3 { margin-top: 0; margin-bottom: 0.25rem; }
+.pachet p, .pachet ul { max-width: none; font-size: 1rem; line-height: 1.6; }
+.pachet ul { padding-left: 1.1rem; }
+
+.pret { color: var(--text-soft); margin-bottom: 1rem; }
+.pret strong { font-size: 1.9rem; color: var(--albastru); }
+.include { font-weight: 600; margin-bottom: 0.5rem; }
+
+/* Cardul evidențiat (Standard / Most popular) */
+.pachet.recomandat {
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-top: 4px solid var(--accent);
+  box-shadow: 0 6px 18px rgba(18, 48, 79, 0.12);
+}
+.insigna {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.15rem 0.7rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem !important;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
 /* ===== Întrebări frecvente ===== */
 details {
   border-bottom: 1px solid var(--linie);
