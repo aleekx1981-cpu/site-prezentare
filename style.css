@@ -220,6 +220,16 @@ td strong { color: var(--accent); }
   .pachete.proiecte { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* Butoanele din Proiecte stau la baza cardurilor, pe aceeași linie */
+.proiecte .pachet {
+  display: flex;
+  flex-direction: column;
+}
+.proiecte .pachet .buton {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .pret { color: var(--text-soft); margin-bottom: 1rem; }
 .pret strong { font-size: 1.9rem; color: var(--albastru); }
 .include { font-weight: 600; margin-bottom: 0.5rem; }
