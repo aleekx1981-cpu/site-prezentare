@@ -215,6 +215,11 @@ td strong { color: var(--accent); }
 .pachet p, .pachet ul { max-width: none; font-size: 1rem; line-height: 1.6; }
 .pachet ul { padding-left: 1.1rem; }
 
+/* Proiecte: 2 carduri pe rând pe calculator */
+@media (min-width: 860px) {
+  .pachete.proiecte { grid-template-columns: repeat(2, 1fr); }
+}
+
 .pret { color: var(--text-soft); margin-bottom: 1rem; }
 .pret strong { font-size: 1.9rem; color: var(--albastru); }
 .include { font-weight: 600; margin-bottom: 0.5rem; }
